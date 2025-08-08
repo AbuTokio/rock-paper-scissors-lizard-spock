@@ -19,43 +19,49 @@
     <main>
       <section class="game-selection-wrapper">
         <div class="game-selection-btn-wrapper">
-          <button class="game-selection-btn game-paper-btn"></button>
+          <button class="game-selection-btn game-btn game-paper-btn"></button>
         </div>
         <div class="game-selection-btn-wrapper">
-          <button class="game-selection-btn game-rock-btn"></button>
+          <button class="game-selection-btn game-btn game-rock-btn"></button>
         </div>
         <div class="game-selection-btn-wrapper">
-          <button class="game-selection-btn game-lizard-btn"></button>
+          <button class="game-selection-btn game-btn game-lizard-btn"></button>
         </div>
         <div class="game-selection-btn-wrapper">
-          <button class="game-selection-btn game-spock-btn"></button>
+          <button class="game-selection-btn game-btn game-spock-btn"></button>
         </div>
         <div class="game-selection-btn-wrapper">
-          <button class="game-selection-btn game-scissors-btn"></button>
+          <button class="game-selection-btn game-btn game-scissors-btn"></button>
         </div>
       </section>
       <section class="game-result-wrapper">
         <div class="selection-wrapper">
           <div class="selection-btn-wrapper">
-            <button class="player-selection game-selection-btn"></button>
+            <div class="win-hightlight-wrapper">
+              <button class="player-selection-btn game-btn"></button>
+            </div>
             <p class="result-label">You Picked</p>
           </div>
           <div class="selection-btn-wrapper">
-            <button class="house-selection"></button>
+            <div class="win-hightlight-wrapper">
+              <button class="house-selection-btn game-btn"></button>
+            </div>
             <p class="result-label">The House Picked</p>
           </div>
         </div>
-        <div class="result-box">
-          <p class="game-result">YOU WIN</p>
+        <div class="result-wrapper">
+          <p class="game-result">...</p>
           <button class="play-again-btn">Play Again</button>
         </div>
       </section>
       <section class="rules-modal">
-        <p class="rules-title">Rules</p>
-        <img src="./img/image-rules-bonus.svg" alt="game-rules" class="rules-img" />
-        <button type="button" class="rules-close-btn">
-          <img src="./img/icon-close.svg" alt="close-button" />
-        </button>
+        <div class="rules-modal-wrapper">
+          <p class="rules-title">Rules</p>
+          <img src="./img/image-rules-bonus.svg" alt="game-rules" class="rules-img" />
+          <button type="button" class="rules-close-btn">
+            <img src="./img/icon-close.svg" alt="close-button" />
+          </button>
+        </div>
       </section>
     </main>
     <footer>
@@ -65,6 +71,6 @@
         <a href="https://github.com/AbuTokio">AbuTokio</a>.
       </div>
     </footer>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
