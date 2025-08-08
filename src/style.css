@@ -70,7 +70,6 @@ body {
   align-items: center;
   justify-content: space-between;
   animation: blendIn 0.4s linear 0.2s both;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes blendIn {
