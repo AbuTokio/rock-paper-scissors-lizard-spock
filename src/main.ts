@@ -63,10 +63,12 @@ function getResult(): Result {
 }
 
 function highlightWinner(): void {
-  if (result === Result.WIN) {
-    gameElements.playerSelectionButton.classList.add("win-animation")
-  } else {
-    gameElements.houseSelectionButton.classList.add("win-animation")
+  if (result != Result.DRAW) {
+    if (result === Result.WIN) {
+      gameElements.playerSelectionButton.classList.add("win-animation")
+    } else {
+      gameElements.houseSelectionButton.classList.add("win-animation")
+    }
   }
 }
 
