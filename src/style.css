@@ -5,11 +5,6 @@
 % DESKTOP:  1366px
 */
 
-/* todo: find a good solution to display .attribution class */
-.attribution {
-  display: none;
-}
-
 /* # GENERAL STYLINGS */
 
 :root {
@@ -40,10 +35,12 @@
   --header-outline: hsl(217, 16%, 45%);
   --background: radial-gradient(at center top, var(--color-bg-primary), var(--color-bg-secondary));
 
-  --game-width: 90%;
-  --btn-size: 100px;
-  --btn-shadow-size: 6px;
-  --btn-border-width: 12px;
+  --scoreboard-width: clamp(310px, 100%, 900px);
+  --game-width: clamp(280px, 90%, 500px);
+  --btn-size: clamp(100px, 26vw, 175px);
+  --btn-shadow-size: calc(0.06 * var(--btn-size));
+  --btn-border-width: calc(0.12 * var(--btn-size));
+  --game-result-width: clamp(100px, 100%, 600px);
 
   /* # FONT */
 
@@ -70,6 +67,12 @@ body {
   align-items: center;
   justify-content: space-between;
   animation: blendIn 0.4s linear 0.2s both;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-outline);
 }
 
 @keyframes blendIn {
@@ -86,8 +89,12 @@ body {
 header {
   padding: 2rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .scoreboard {
+  width: var(--scoreboard-width);
   border: 3px solid var(--header-outline);
   border-radius: 8px;
   padding: 1.2rem;
@@ -292,7 +299,7 @@ main {
 
 .game-result-wrapper {
   height: 100%;
-  width: 100%;
+  width: var(--game-result-width);
   display: none;
   flex-direction: column;
   align-items: center;
@@ -501,4 +508,40 @@ footer {
 .rules-btn:active {
   background-color: var(--header-outline);
   color: var(--accent);
+}
+
+.attribution {
+  display: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+
+  .game-result-wrapper {
+    height: 90%;
+  }
+  .result-wrapper {
+    justify-content: center;
+  }
+
+  footer,
+  .rules-btn,
+  .attribution {
+    position: fixed;
+  }
+
+  .rules-btn {
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .attribution {
+    display: initial;
+    left: 2rem;
+    bottom: 2.5rem;
+  }
 }
