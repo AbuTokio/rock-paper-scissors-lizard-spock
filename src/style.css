@@ -41,6 +41,8 @@
   --btn-shadow-size: calc(0.06 * var(--btn-size));
   --btn-border-width: calc(0.12 * var(--btn-size));
   --game-result-width: clamp(100px, 100%, 600px);
+  --rules-modal-height: clamp(600px, 90%, 800px);
+  --rules-modal-width: clamp(310px, 90%, 800px);
 
   /* # FONT */
 
@@ -435,7 +437,6 @@ main {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
   display: none;
   flex-direction: column;
   align-items: center;
@@ -447,19 +448,20 @@ main {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 .rules-modal-wrapper {
   z-index: 1000;
   padding: 2rem;
   background-color: var(--accent);
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80%;
-  width: 80%;
+  height: var(--rules-modal-height);
+  width: var(--rules-modal-width);
   animation: scaleUp 0.4s cubic-bezier(0.3, 0.5, 0.5, 1) both;
   position: relative;
 }
@@ -498,6 +500,10 @@ main {
 
 footer {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .rules-btn {
@@ -509,6 +515,7 @@ footer {
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 10rem;
 }
 
 .rules-btn:hover {
@@ -522,37 +529,7 @@ footer {
 }
 
 .attribution {
-  display: none;
+  /* display: none; */
   color: var(--accent);
   font-size: 0.8rem;
-}
-
-@media only screen and (min-width: 768px) {
-  :root {
-    font-size: 20px;
-  }
-
-  .game-result-wrapper {
-    height: 90%;
-  }
-  .result-wrapper {
-    justify-content: center;
-  }
-
-  footer,
-  .rules-btn,
-  .attribution {
-    position: fixed;
-  }
-
-  .rules-btn {
-    right: 2rem;
-    bottom: 2rem;
-  }
-
-  .attribution {
-    display: initial;
-    left: 2rem;
-    bottom: 2.5rem;
-  }
 }

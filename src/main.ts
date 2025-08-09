@@ -1,4 +1,7 @@
 import "./style.css"
+import "./tablet.css"
+import "./desktop.css"
+import "./desktop-1366px.css"
 import { Selection } from "./enums/Selection"
 import { Result } from "./enums/Result"
 

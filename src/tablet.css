@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+
+  .game-result-wrapper {
+    height: 90%;
+  }
+  .result-wrapper {
+    justify-content: center;
+  }
+
+  footer,
+  .rules-btn,
+  .attribution {
+    position: fixed;
+  }
+
+  .rules-btn {
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .attribution {
+    display: initial;
+    left: 2rem;
+    bottom: 2.5rem;
+  }
+}
