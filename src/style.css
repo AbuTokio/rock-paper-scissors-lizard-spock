@@ -529,7 +529,6 @@ footer {
 }
 
 .attribution {
-  /* display: none; */
   color: var(--accent);
   font-size: 0.8rem;
 }
