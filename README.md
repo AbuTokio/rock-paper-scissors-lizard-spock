@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [rock-paper-scissors-lizard-spock](https://github.com/AbuTokio/rock-paper-scissors-lizard-spock)
-- Live Site URL: [tbd]()
+- Solution URL: [https://github.com/AbuTokio/rock-paper-scissors-lizard-spock](https://github.com/AbuTokio/rock-paper-scissors-lizard-spock)
+- Live Site URL: [https://abutokio.github.io/rock-paper-scissors-lizard-spock/](https://abutokio.github.io/rock-paper-scissors-lizard-spock/)
 
 ## Built with
 
