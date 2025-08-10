@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
-/*
-% MOBILE:   375px
-% DESKTOP:  1366px
-*/
-
 /* # GENERAL STYLINGS */
 
 :root {
@@ -51,8 +46,6 @@
   font-weight: 600;
   background: var(--background);
 }
-
-/* # GENERAL STYLING */
 
 * {
   margin: 0;
@@ -146,7 +139,7 @@ main {
 
 .game-selection-wrapper {
   display: initial;
-  background: url("../img/bg-pentagon.svg") center/contain no-repeat;
+  background: url("/src/assets/img/bg-pentagon.svg") center/contain no-repeat;
   position: relative;
   aspect-ratio: 1.05 / 1;
   width: calc(var(--game-width) - (calc(var(--btn-size) / 2)));
@@ -197,7 +190,7 @@ main {
 
 .game-paper-btn {
   border-color: var(--paper-start);
-  background-image: url("../img/icon-paper.svg");
+  background-image: url("/src/assets/img/icon-paper.svg");
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.2), 0 var(--btn-shadow-size) var(--paper-shadow);
 }
 
@@ -221,7 +214,7 @@ main {
 
 .game-rock-btn {
   border-color: var(--rock-start);
-  background-image: url("../img/icon-rock.svg");
+  background-image: url("/src/assets/img/icon-rock.svg");
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.2), 0 var(--btn-shadow-size) var(--rock-shadow);
 }
 
@@ -245,7 +238,7 @@ main {
 
 .game-lizard-btn {
   border-color: var(--lizard-start);
-  background-image: url("../img/icon-lizard.svg");
+  background-image: url("/src/assets/img/icon-lizard.svg");
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.2), 0 var(--btn-shadow-size) var(--lizard-shadow);
 }
 
@@ -269,7 +262,7 @@ main {
 
 .game-spock-btn {
   border-color: var(--spock-start);
-  background-image: url("../img/icon-spock.svg");
+  background-image: url("/src/assets/img/icon-spock.svg");
   background-position: 60%;
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.2), 0 var(--btn-shadow-size) var(--spock-shadow);
 }
@@ -290,7 +283,7 @@ main {
 
 .game-scissors-btn {
   border-color: var(--scissors-start);
-  background-image: url("../img/icon-scissors.svg");
+  background-image: url("/src/assets/img/icon-scissors.svg");
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.2), 0 var(--btn-shadow-size) var(--scissors-shadow);
 }
 
